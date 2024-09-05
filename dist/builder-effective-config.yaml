@@ -1,0 +1,18 @@
+directories:
+  output: dist
+  buildResources: public
+appId: com.electron.myapp
+productName: My Electron App
+files:
+  - filter:
+      - build/**/*
+mac:
+  target: dmg
+win:
+  target: nsis
+linux:
+  target: deb
+extends: null
+extraMetadata:
+  main: build/electron.js
+electronVersion: 32.0.2
